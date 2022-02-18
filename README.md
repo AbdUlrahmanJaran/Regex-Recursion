@@ -1,5 +1,5 @@
 # Regex-Recursion
-    let div = 0;
+let div = 0;
 function division(number, dividedBy){
     if (number % dividedBy == 0 && number >= 1) {
         div++;
