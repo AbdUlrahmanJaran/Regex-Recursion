@@ -1,12 +1,13 @@
 # Regex-Recursion
 let div = 0;
 function division(number, dividedBy){
-    if (number % dividedBy == 0 && number >= 1) {
-        div++;
+    if (number % dividedBy == 0 && number >= 1 && dividedBy >= 1) {
         division(number - dividedBy, dividedBy);  
+        div++;
     }
     return div;
 }
+
 
 function pow(x,n){
     if (n > 0)
@@ -14,6 +15,7 @@ function pow(x,n){
   else
     return 1
 }
+
 
 let f = 0 ;
 function fibonacci(n){
