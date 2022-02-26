@@ -6,12 +6,12 @@
 characters (no numbers and symbols) and it should end with capital A else return false */
 
 function capitalA(s){
-    let regex = /^[A-Za-z]+$/;
-    let a = /A$/
-    if (regex.test(s) && a.test(s))
-    return regex.test(s);
-    else
-    return false;
+    let regex = /^[A-Za-z]/g;
+    let a = /[A]$/;
+    if (regex.test(s) && a.test(s)){
+    return true;}
+    else{
+    return false;}
 }
 
 
