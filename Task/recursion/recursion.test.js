@@ -1,6 +1,6 @@
 /* Write a function to do the division operation without using the built-in division*/
-let div = 0;
 function division(number, dividedBy){
+    let div = 0;
     if (number % dividedBy == 0 && number >= 1 && dividedBy >= 1) {
         division(number - dividedBy, dividedBy);  
         div++;
